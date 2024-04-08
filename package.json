@@ -5,22 +5,29 @@
   "main": "server.js",
   "scripts": {
     "start": "node server",
-    "server":"nodemon server"
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Mike Wang",
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "config": "^3.3.9",
+    "cors": "^2.8.5",
     "express": "^4.18.2",
     "express-validator": "^7.0.1",
     "gravatar": "^1.8.2",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^7.6.2",
-    "request": "^2.88.2"
+    "npm": "^10.2.3",
+    "prop-types": "^15.8.1",
+    "request": "^2.88.2",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
     "concurrently": "^8.2.1",
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.1",
+    "webpack": "^5.89.0"
   }
 }
