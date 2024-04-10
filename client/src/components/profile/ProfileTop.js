@@ -13,7 +13,7 @@ const ProfileTop = ({
 
 }) => {
   return (
-    <div>
+ 
    <div class="profile-top bg-primary p-2">
      <img
        class="round-img my-1"
@@ -58,7 +58,7 @@ const ProfileTop = ({
        
      </div>
    </div>
-</div>
+
   )
 }
 
