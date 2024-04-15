@@ -9,9 +9,11 @@ export const Navbar = ({auth: {isAuthenticated, loading}, logout }) => {
 
   const authLinks = (
     <ul>
-      <li><Link to ="/profiles">
-      Developers
-      </Link>
+      <li>
+        <Link to ="/profiles">Developers</Link>
+      </li>
+      <li>
+        <Link to ="/posts">Posts</Link>
       </li>
       <li><Link to ="/dashboard">
       <i className="fas fa-user"/>{''}
@@ -32,8 +34,10 @@ export const Navbar = ({auth: {isAuthenticated, loading}, logout }) => {
       Developers
       </Link>
       </li>
+      <li><Link to ="/posts">Posts</Link></li>
       <li><Link to ="/register">Register</Link></li>
       <li><Link to ="/login">Login</Link></li>
+      
     </ul>);
   return (
     <nav className="navbar bg-dark">
