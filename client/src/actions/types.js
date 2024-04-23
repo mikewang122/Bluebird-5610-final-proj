@@ -18,6 +18,9 @@ export const ACCOUNT_DELETED = 'ACCOUNT_DELETED';
 export const GET_POSTS = 'GET_POSTS';
 export const POST_ERROR = 'POST_ERROR';
 export const UPDATE_LIKES = 'UPDATE_LIKES';
+export const DELETE_POST = 'DELETE_POST';
+export const ADD_POST = 'ADD_POST';
+export const GET_POST = 'GET_POST';
 // Compare this snippet from client/src/actions/alert.js:
 // import uuid from 'uuid';
 // import { SET_ALERT, REMOVE_ALERT } from './types';
