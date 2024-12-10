@@ -1,8 +1,8 @@
-# DevConnector
+# BlueBird
 
-### Social Network for Developers
+### Mock twitter/bluesky project for CS5610
 
-DevConnector is a MERN stack application (MongoDB + Express + React + Node.js) with Redux for state management.
+BlueBird is a MERN stack application (MongoDB + Express + React + Node.js) with Redux for state management.
 
 ## Functionality
 
@@ -10,8 +10,8 @@ DevConnector is a MERN stack application (MongoDB + Express + React + Node.js) w
 - Users can register and log in to the platform.
 
 ### Publicly Available
-- List of all registered developers.
-- Profiles of each developer.
+- List of all registered users.
+- Profiles of each user.
 
 ### Privately Available
 - Personal dashboard displaying experiences and education.
