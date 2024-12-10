@@ -9,6 +9,7 @@ const checkObjectId = require('../../middleware/checkObjectId');
 const Mongoose = require('mongoose');
 const c = require('config');
 
+
 //@route  POST api/posts
 //@desc   Create a post
 //@access Private
@@ -34,6 +35,8 @@ router.post('/',[ auth,[
         res.status(500).send('Server Error');
     }    
 });
+
+
 
 
 //@route  GET api/posts

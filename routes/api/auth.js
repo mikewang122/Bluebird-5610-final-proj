@@ -7,6 +7,8 @@ const jwt = require('jsonwebtoken');
 const config = require('config');
 const {check, validationResult} = require('express-validator');
 
+
+
 //@route  GET api/auth
 //@desc   test route
 //@access Public
@@ -21,6 +23,9 @@ router.get('/',auth, async (req, res) => {
 
 
 });
+
+
+
 
 // @route    POST api/auth
 // @desc     Authenticate user & get token

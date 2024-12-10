@@ -39,11 +39,11 @@
 
 /* Global Styles */
 :root {
-  --primary-color: #17a2b8;
-  --dark-color: #343a40;
-  --light-color: #f4f4f4;
-  --danger-color: #dc3545;
-  --success-color: #28a745;
+  --primary-color: #0ea5e9; /* Cyan blue */
+  --dark-color: #1e293b; /* Dark navy */
+  --light-color: #f1f5f9; /* Light gray */
+  --danger-color: #ef4444; /* Red */
+  --success-color: #10b981; /* Green */
 }
 
 * {

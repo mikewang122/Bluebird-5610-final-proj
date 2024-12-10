@@ -7,10 +7,11 @@ import { logout } from '../../actions/auth'
 
 export const Navbar = ({auth: {isAuthenticated, loading}, logout }) => {
 
+  //Navbar for authenticated users
   const authLinks = (
     <ul>
       <li>
-        <Link to ="/profiles">Developers</Link>
+        <Link to ="/profiles">People</Link>
       </li>
       <li>
         <Link to ="/posts">Posts</Link>
@@ -28,10 +29,12 @@ export const Navbar = ({auth: {isAuthenticated, loading}, logout }) => {
     </ul>
   );
 
+
+  //Navbar for guests
   const guestLinks = (
     <ul>
       <li><Link to ="/profiles">
-      Developers
+      People
       </Link>
       </li>
       <li><Link to ="/posts">Posts</Link></li>
@@ -42,7 +45,7 @@ export const Navbar = ({auth: {isAuthenticated, loading}, logout }) => {
   return (
     <nav className="navbar bg-dark">
       <h1>
-        <Link to = '/'><i className="fas fa-code"></i> DevConnector
+        <Link to = '/'><i className="fas fa-code"></i> Bluebird 
         </Link>
       </h1>
       { !loading && (<Fragment>{ isAuthenticated ? authLinks : guestLinks}</Fragment>) }
