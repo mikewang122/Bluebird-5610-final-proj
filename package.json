@@ -1,11 +1,12 @@
 {
-  "name": "devconnector",
+  "name": "bluebird",
   "version": "1.0.0",
   "description": "Social network for developers",
   "main": "server.js",
   "scripts": {
     "start": "node server",
     "server": "nodemon server",
+    "build": "react-scripts build",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
