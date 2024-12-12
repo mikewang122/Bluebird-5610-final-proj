@@ -10,7 +10,7 @@ connectDB();
 
 // CORS configuration
 const allowedOrigins = [
-  'http://localhost:3000', // Local development frontend
+  'http://localhost:3000', // Local development
   'https://bluebird-5610-final-proj.onrender.com', // Deployed frontend
 ];
 
@@ -22,14 +22,11 @@ app.use(cors({
       callback(new Error('Not allowed by CORS'));
     }
   },
-  credentials: true, // Allow cookies or tokens in requests
+  credentials: true,
 }));
 
 // Init middleware for parsing JSON
 app.use(express.json({ extended: false }));
-
-// Test route
-app.get('/', (req, res) => res.send('API Running'));
 
 // Define API routes
 app.use('/api/users', require('./routes/api/users'));
@@ -39,12 +36,12 @@ app.use('/api/posts', require('./routes/api/posts'));
 
 // Serve static assets in production
 if (process.env.NODE_ENV === 'production') {
-  // Set the static folder
+  // Set static folder
   app.use(express.static(path.join(__dirname, 'client/build')));
 
-  // Serve React frontend for all non-API routes
+  // Catch-all route to serve React's index.html for any non-API routes
   app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
   });
 }
 
